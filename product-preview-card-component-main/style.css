@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+:root{
+--dark-cyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 30%, 82%);
+--verydarkblue: hsl(212, 21%, 14%);
+--dark-grayishblue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+--fw-regular:500;
+--fw-bold:700;
+}
+
+
+body{
+    background-color:var(--cream);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:0.9rem;
+    min-height:100vh;
+}
+
+.container{
+    background-color:var(--white);
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    margin:2rem auto;
+    border-radius:0.5rem;
+    max-width: 600px;
+   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container img{
+    max-width: 100%; /* Make the image responsive and fit within its container */
+    height: 100%; /* Maintain the image's aspect ratio */
+    border-top-left-radius:0.5rem;
+    border-bottom-left-radius:0.5rem;
+}
+
+.container .info .perfume{
+    font-size:15px;
+    margin-left: 32px;
+    margin-top: 28px;
+    letter-spacing: 8px;
+    color:var(--dark-grayishblue);
+    text-transform:uppercase;
+}
+
+.container .info h2{
+    margin-left:33px;
+    margin-top:20px;
+    margin-bottom: 25px;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    line-height:1;
+}
+
+.container .info .paragraph{
+    margin-left:33px;
+    margin-top:20px;
+    padding-right:20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    margin-right:10px;
+    line-height:1.5;
+    color:var(--dark-grayishblue);
+}
+
+
+.container .info .price{
+    display: flex;
+    align-items:center;
+    
+}
+
+.container .info .price .current-price{
+    margin-left:33px;
+    margin-bottom: 20px;
+    font-size:2rem;
+    font-family:'Fraunces', serif; 
+    color:var(--dark-cyan);
+}
+
+
+.container .info .price .old-price{
+    font-size:0.8rem;
+    margin-left:20px;
+    padding-bottom:20px;
+    text-decoration: line-through;
+    color:var(--dark-grayishblue);
+}
+
+
+.container .button button {
+    width: 250px; /* Adjust the width of the button */
+    height: 40px; /* Adjust the height of the button */
+    background-color: var(--dark-cyan); /* Set the background color of the button */
+    color: white; /* Set the text color of the button */
+    font-size: 1rem; /* Adjust the font size of the button */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0.5rem;
+  }
+
+
+  .container .button{
+    display:flex;
+    justify-content:center;
+  }
+
+
+  .container .button button img {
+    width: 20px;
+    height: 20px;
+    margin-right:10px;
+    
+  }
+
+
+
+  .container .button :hover {
+    background-color: var(--verydarkblue); /* Change the background color on hover */
+  }
